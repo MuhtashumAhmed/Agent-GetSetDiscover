@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Search, X, Plus } from "lucide-react";
-import { Input } from "./input";
+
 import { DestinationButton } from "./DestinationButton";
 import { CrossIcon } from "../../assets/icons/Icons";
 
