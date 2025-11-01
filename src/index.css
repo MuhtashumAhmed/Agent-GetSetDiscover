@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Nunito:wght@200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&family=Poppins:wght@100..900&family=Urbanist:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+
+
+@import "tailwindcss";
+@plugin "daisyui";
+
+@import "react-datepicker/dist/react-datepicker.css";
+
+
+
+
+
+@theme {
+
+  --color-primary-text-color: #0C1421;
+  /* */
+  --color-secondary-text-color: #313957;
+  /* */
+  --color-socialIcon-color: #757D83;
+  --color-gray-text-color: #6B7271;
+  /* */
+  --color-light-gray-text-color: #B3B7BA;
+  /* */
+  --color-myWhite-color: #FFFFFF;
+  /* */
+  --color-primary-background: #FF6600;
+  /* */
+  --color-secondary-background: #FFE4D2;
+
+  /* */
+  --color-light-background: #FFF8F4;
+  /* */
+  --color-myBlue: #007AFC;
+  --color-Link: #1E4AE9;
+  /* */
+  --color-myBlack: rgba(0, 0, 0, 1);
+  --color-myGray: #0A0A0A;
+  /* */
+  --color-Dark-Blue: rgba(31, 48, 69, 1);
+  /* */
+  --color-light-Red: rgba(255, 241, 243, 1);
+  /* */
+  --color-light-Purple: rgba(247, 197, 255, 1);
+  /* */
+  --color-light-gray: rgba(245, 245, 245, 1);
+  --font-manrope: "Manrope", sans-serif;
+  --font-nunito: "Nunito", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+  --font-urbanist: "Urbanist", sans-serif;
+  --font-noto: "Noto Sans", sans-serif;
+  /* replace of Segoe UI   */
+  --font-quicksand: "Quicksand", sans-serif;
+  --font-inter: "Inter", sans-serif;
+  --font-jakarta: "Plus Jakarta Sans", sans-serif;
+
+
+}
+
+
+body {
+  background-color: #FFE4D2
+}
+
+
+/* input number mai range scroller hidden */
+
+/* Chrome, Safari, Edge */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+
+/* ==== Scroll Bar ===== */
+@media screen and (min-width: 700px) {
+
+  /* Works on Chrome, Edge, Safari */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 7px;
+    height: 6px;
+    padding-left: 20px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #a3a3a3;
+    border-radius: 10px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: #f5f5f5;
+  }
+
+
+}
+
+.clr{
+  background-color: aquamarine;
+}
+
+/* Shimmer or skaleton effect */
+.shimmer {
+  background: #f6f7f8;
+  background-image: linear-gradient(to right,
+      #f6f7f8 0%,
+      #edeef1 20%,
+      #f6f7f8 40%,
+      #f6f7f8 100%);
+  background-repeat: no-repeat;
+  background-size: 200% 100%;
+  display: inline-block;
+  animation: shimmer 1.2s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+
+  100% {
+    background-position: 200% 0;
+  }
+}

@@ -1,0 +1,57 @@
+/* datepicker.css */
+
+/* Calendar container rounded */
+.react-datepicker {
+    border-radius: 16px !important;
+    overflow: hidden;
+    border: 1px solid #eee;
+
+}
+
+/* Navigation arrows */
+.react-datepicker__navigation {
+    top: 12px;
+    /* thoda neeche shift karne ke liye */
+    line-height: 1.2;
+    padding: 6px;
+    /* 👈 arrow buttons ke andar padding */
+    border-radius: 50%;
+}
+
+.react-datepicker__navigation-icon::before {
+    border-color: #2563eb;
+    /* Tailwind blue-600 */
+    border-width: 2px 2px 0 0;
+    width: 10px;
+    height: 10px;
+}
+
+/* Hover effect on arrows */
+.react-datepicker__navigation:hover {
+    /* background-color: rgba(37, 99, 235, 0.1); light blue hover */
+}
+
+
+/* Header (month navigation) */
+.react-datepicker__header {
+    padding-top: 10px;
+    border-bottom: none;
+    background: #fff;
+    border-top-left-radius: 16px !important;
+    border-top-right-radius: 16px !important;
+}
+
+/* Day cells */
+.react-datepicker__day {
+    border-radius: 50% !important;
+
+}
+
+/* Selected day */
+.react-datepicker__day--selected,
+.react-datepicker__day--keyboard-selected {
+    background-color: #2563eb !important;
+    /* Tailwind blue-600 */
+    color: white !important;
+    border-radius: 30% !important;
+}
